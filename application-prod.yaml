@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: CodeMindTechnologyProd
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://97.74.86.128:3306/apicodemindtechn_codemind
+    username: apicodemindtechn_ecom_user
+    password: Codemind@123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+
+server:
+  port: 8181
+
+swagger:
+  server-url: http://localhost:8181
+
+security:
+  jwt:
+    secret-key: Q29kZW1pbmRUZWNobm9sb2d5QFplc3RJbmRpYUl0U2VydmljZQ==
+    expiration-time: 36000000
