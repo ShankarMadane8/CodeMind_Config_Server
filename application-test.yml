@@ -1,6 +1,6 @@
 spring:
   application:
-    name: CodeMindTechnologyDefault
+    name: CodeMindTechnologytest
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://97.74.86.128:3306/apicodemindtechn_codemind
