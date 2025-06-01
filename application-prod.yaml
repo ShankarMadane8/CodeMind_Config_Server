@@ -18,7 +18,7 @@ spring:
       config: classpath:ehcache.xml
 
 server:
-  port: 8181
+  port: 8182
 
 swagger:
   server-url: http://localhost:8181
